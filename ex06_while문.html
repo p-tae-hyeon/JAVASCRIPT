@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //while 문 예제
+        let num = 1;
+        while(num <=10){
+            console.log('JAVASCRIPT 재밌다');
+            num +=1;
+        }
+
+        let num1 = 1;
+
+        while (true) {
+            console.log(num1);
+            num1++;
+
+            //조건문을 사용해서 코드를 끝내기
+            if(num1 === 11){
+                console.log('프로그램을 종료합니다.');
+                break;
+            }
+        }
+        result =0;
+        while (true) {
+            num2 = parseInt(prompt('숫자를 입력해주세요.'));
+            if(num2==0){
+                console.log('프로그램 종료합니다');
+                break;
+            }else{
+                result+=num2;
+                console.log('더한 결과: '+result);
+            }
+            
+        }
+        
+    </script>
+</body>
+</html>

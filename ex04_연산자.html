@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num1 = 11;
+        let num2 = 5;
+
+        console.log(num1 + num2);
+        console.log(num1 - num2);
+        // JS에서는 / 기호를 사용하면 계산값이 출력
+        console.log(num1 / num2);
+
+        //증감연산자
+        let num3 = 10;
+        let result = num3-- + 5 + --num3;
+        console.log(num3, result);
+        //          8, 23
+
+        //복합대입연산자
+        // num += 5;
+        // num = num + 5;
+
+        // num2 -= 6
+        // num2 = num2 - 6
+
+        // 비교연산자
+        let num50 = 3;
+        let num60 = 7;
+        console.log(num50<num60);
+        
+        // 동등연산자, 일치연산자
+        // '=='         '==='
+        // 동등연산자 : 두개의 피연사자 값이 같은지 비교
+        //              둘 중 하나의 값이 다른 자료형이면 자동으로 형 변환
+        // 일치연산자 : 두개의 피연사자 값이 같은지 비교
+        //              데이터와 자료형 모두 비교
+
+        // 논리연산자
+        // 1. NOT연산자 : ! -> 기존값을 반대로 뒤집는 연산기호
+        // 2. AND연산자 : && -> 두 논리값 , 식이 모두 참일떄 true 값 반환
+        // 3. OR연산자 :  || -> 두 논리값, 식 중에 하나만 참이여도 true 값 반환
+        // 4. 삼항연산자
+        // - 조건식 ? 실행문자1 : 실행문자2
+        //  조건식이 참일때 : 실행문자1 실행
+        // 조건식이 거짓일때 : 실행문자2 실행
+
+        let a = prompt('숫자를 입력해주세요!');
+        // resulrt = a % 2 === 0 ? '짝수':'홀수';
+        // console.log(`${a}은(는) ${resulrt}입니다`);
+        // console.log(a%2===0? a+'짝수':a+'홀수');
+        
+        //템플릿 문자열
+        // -문자열 안에 변수를 같이 사용할 수 있는 문법
+        // - 백틱(``)
+        console.log(a % 2 == 1 ? `${a}는 홀수` : `${a}는 짝수`);
+        
+        
+        
+    </script>
+</body>
+</html>
